@@ -1,0 +1,69 @@
+name: Download or Release Problem
+description: Report a problem with a public release, installer, asset, or release metadata.
+title: "[Release issue]: "
+labels:
+  - release
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for public release issues only.
+
+        Good examples:
+        - DMG download link is broken
+        - checksum mismatch
+        - notarization warning on install
+        - release notes or version metadata is incorrect
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: "v0.1.9"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Problem area
+      options:
+        - Download link
+        - DMG installer
+        - Checksum
+        - Release notes
+        - Metadata file
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: "macOS 14.7, Apple Silicon"
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened
+      placeholder: Describe the issue clearly and include the exact asset URL if relevant.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open release page
+        2. Click the DMG link
+        3. ...
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or logs
+      placeholder: Paste screenshots, errors, or verification output here.
+
