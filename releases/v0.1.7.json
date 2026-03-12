@@ -1,0 +1,14 @@
+{
+  "version": "0.1.7",
+  "tag": "v0.1.7",
+  "published_at": "2026-02-08T14:40:55Z",
+  "name": "v0.1.7: Cover Editor Enhancements",
+  "assets": [
+    {
+      "name": "ClaudeBench-0.1.7-universal.dmg",
+      "platform": "macOS universal",
+      "url": "https://github.com/MJYKIM99/claudebench-releases/releases/download/v0.1.7/ClaudeBench-0.1.7-universal.dmg",
+      "sha256": "307bbe6a2ffc9fac3465e51d5aa092e196d99af09e1f5d169d626dbab08c6927"
+    }
+  ]
+}
